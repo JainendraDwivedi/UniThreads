@@ -1,1 +1,1 @@
-# MNNIT-STUDENT-CENTER-MAIN
+# MNNIT-Student-Center
