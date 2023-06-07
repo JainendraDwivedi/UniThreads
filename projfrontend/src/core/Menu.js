@@ -1,6 +1,6 @@
 // Navigation Bar
 
-import React, {Fragment}from "react";
+import React, {Fragment} from "react";
 // npm install react-router-dom@5.2.0 we need to use 5.2.0 dom to use withRouter
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAutheticated } from "../auth/helper";
@@ -35,17 +35,20 @@ const Menu = ({ history }) => (
         </Link>
       </li>
 
-      <li className="nav-item">
+      {isAutheticated() && isAutheticated().user.role===0 && (
+        <li className="nav-item">
         <Link
           style={currentTab(history, "/user/dashboard")}
           className="nav-link"
           to="/user/dashboard"
         >
-          Dashboard
+         U. Dashboard
         </Link>
       </li>
+      ) }
 
-      <li className="nav-item">
+      {isAutheticated() && isAutheticated().user.role===1 && (
+        <li className="nav-item">
         <Link
           style={currentTab(history, "/admin/dashboard")}
           className="nav-link"
@@ -54,6 +57,7 @@ const Menu = ({ history }) => (
           A. Dashboard
         </Link>
       </li>
+      )}
 
       {!isAutheticated() && (
         <Fragment>

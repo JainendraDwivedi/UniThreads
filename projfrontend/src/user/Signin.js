@@ -36,7 +36,7 @@ const Signin = () => {
           authenticate(data, () => {
             setValues({
               ...values,
-              didRedirect: true
+              didRedirect: true,
             });
           });
         }
@@ -47,12 +47,12 @@ const Signin = () => {
 
 // redirection according to role(admin or simple user)
   const performRedirect = () => {
-    //TODO: do a redirect here
     if (didRedirect) {
-      if (user && user.role === 1) {
-        return <p>redirect to admin</p>;
-      } else {
-        return <p>redirect to user dashboard</p>;
+      if (user && (user.role === 1)) {
+        return <Redirect to="/admin/dashboard"/>;
+      } 
+      else{
+        return <Redirect to="/user/dashboard"/>;
       }
     }
     if (isAutheticated()) {
