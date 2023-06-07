@@ -25,11 +25,12 @@ const Signup = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     setValues({ ...values, error: false });
-    signup({ name, email, password })
-      .then((data) => {
+    signup({ name, email, password }) // use api request to backend that we created in auth-helper-index.js
+      .then((data) => {  // response from backend request
         if (data.error) {
           setValues({ ...values, error: data.error, success: false });
         } else {
+          // resetting states
           setValues({
             ...values,
             name: "",
@@ -43,7 +44,7 @@ const Signup = () => {
       .catch(console.log("Error in signup"));
   };
 
-  // signup form
+  // signup form method
   const signUpForm = () => {
     return (
       <div className="row">
@@ -96,7 +97,7 @@ const Signup = () => {
             className="alert alert-success"
             style={{ display: success ? "" : "none" }}
           >
-            New account was created successfully. Please{" "}
+            New account was created successfully. Please 
             <Link to="/signin">Login Here</Link>
           </div>
         </div>

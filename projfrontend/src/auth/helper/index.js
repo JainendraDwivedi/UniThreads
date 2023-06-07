@@ -1,5 +1,6 @@
 import { API } from "../../backend";
 
+// Signup Request
 export const signup = user => {
   return fetch(`${API}/signup`, {
     method: "POST",
@@ -15,6 +16,7 @@ export const signup = user => {
     .catch(err => console.log(err));
 };
 
+// Signin Request
 export const signin = user => {
   return fetch(`${API}/signin`, {
     method: "POST",
@@ -30,6 +32,7 @@ export const signin = user => {
     .catch(err => console.log(err));
 };
 
+// 'authenticate' middleware (stores token in user browser)
 export const authenticate = (data, next) => {
   if (typeof window !== "undefined") {
     localStorage.setItem("jwt", JSON.stringify(data));
@@ -37,6 +40,7 @@ export const authenticate = (data, next) => {
   }
 };
 
+// // Signout Request
 export const signout = next => {
   if (typeof window !== "undefined") { 
     localStorage.removeItem("jwt"); // signout from frontend
@@ -52,10 +56,11 @@ export const signout = next => {
 
 export const isAutheticated = () => {
   if (typeof window == "undefined") {
-    return false;
+    return false;  // if not authenticated i.e. no access to window
   }
   if (localStorage.getItem("jwt")) {
-    return JSON.parse(localStorage.getItem("jwt"));
+    //  return jwt value, in frontend we check whether token is exactly same as user we are looking up for, then fire it up as true
+    return JSON.parse(localStorage.getItem("jwt")); 
   } else {
     return false;
   }
