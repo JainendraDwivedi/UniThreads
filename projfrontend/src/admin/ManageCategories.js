@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Base from "../core/Base";
 import { Link } from "react-router-dom";
 import { isAutheticated } from "../auth/helper";
-import { getCategories } from "./helper/adminapicall";
+import { getCategories , deleteCategory} from "./helper/adminapicall";
 
 const ManageCategories = () => {
   const [categories, setCategories] = useState([]);
@@ -23,6 +23,17 @@ const ManageCategories = () => {
     preload();
   }, []);
 
+   // delete this category
+   const deleteThisCategory = categoryId => {
+    deleteCategory(categoryId, user._id, token).then(data => {
+      if (data.error) {
+        console.log(data.error);
+      } else {
+        preload();
+      }
+    });
+  };
+
   return (
     <Base title="Welcome admin" description="Manage categories here">
       <h2 className="mb-4">All Categories:</h2>
@@ -41,13 +52,15 @@ const ManageCategories = () => {
             <div className="col-4">
               <Link
                 className="btn btn-success"
-                to={`/admin/product/update/productId`}
+                to={`/admin/category/update/${category._id}`}
               >
                 <span className="">Update</span>
               </Link>
             </div>
             <div className="col-4">
-              <button onClick={() => {}} className="btn btn-danger">
+              <button onClick={() => {
+                deleteThisCategory(category._id);
+              }} className="btn btn-danger">
                 Delete
               </button>
             </div>
@@ -61,3 +74,6 @@ const ManageCategories = () => {
 };
 
 export default ManageCategories;
+
+
+// TODO: update category not working : backend error
