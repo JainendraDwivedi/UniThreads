@@ -35,7 +35,7 @@ A comprehensive merchandise management platform for college clubs, streamlining 
 
 ## Installation
 
-1. Clone this GitHub repository - [NirAmaya](https://github.com/JainendraDwivedi/UniThreads)
+1. Clone this GitHub repository - [UniThreads](https://github.com/JainendraDwivedi/UniThreads)
 
 2. Install all dependent npm packages for both folders.
 
