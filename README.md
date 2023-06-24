@@ -9,13 +9,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/JainendraDwivedi/NirAmaya">
-    NirAmaya
+  <a href="https://github.com/JainendraDwivedi/UniThreads">
+    UniThreads
 <!--     <img src="/public/images/LOGO MAIN.png" alt="Logo"> -->
   </a>
 <br/><br/><br/>
-  <img src="/public/images/pngfind.com-japan-png-433.png" alt="Logo"  width="100" height="100">
-  <h3 align="center">Team JaPAn | Avishkar 2021</h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
