@@ -19,7 +19,7 @@ const Cart = () => {
   const loadAllProducts = () => {
     return (
       <div>
-        <h2>This section is to load products</h2>
+        <h2>Your Cart</h2>
         {products.map((product, index) => (
           <Card
             key={index}

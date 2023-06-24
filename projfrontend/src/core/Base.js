@@ -17,13 +17,14 @@ const Base = ({
       <div className={className}>{children}</div>
     </div>
     <footer className="footer bg-dark mt-auto py-3">
-      <div className="container-fluid bg-success text-white text-center py-3">
-        <h4>If you got any questions, feel free to reach out!</h4>
-        <button className="btn btn-warning btn-lg">Contact Us</button>
+      <div className="container-fluid bg-success text-white text-center py-2">
+        <p><span>If you got any questions, feel free to reach out! </span> 
+        <a href="mailto:jainendradwivedi@hotmail.com" target="_blank" class="btn btn-outline-warning">Contact Us</a>
+        </p>
       </div>
       <div className="container">
         <span className="text-muted">
-          An Amazing <span className="text-white">MERN</span> Bootcamp
+          Developed by <span className="text-white">Jainendra Dwivedi</span>
         </span>
       </div>
     </footer>

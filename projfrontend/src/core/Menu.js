@@ -35,7 +35,7 @@ const Menu = ({ history }) => (
         </Link>
       </li>
 
-      {isAutheticated() && isAutheticated().user.role===0 && (
+      {/* {isAutheticated() && isAutheticated().user.role===0 && (
         <li className="nav-item">
         <Link
           style={currentTab(history, "/user/dashboard")}
@@ -45,7 +45,7 @@ const Menu = ({ history }) => (
          U. Dashboard
         </Link>
       </li>
-      ) }
+      ) } */}
 
       {isAutheticated() && isAutheticated().user.role===1 && (
         <li className="nav-item">
@@ -54,7 +54,7 @@ const Menu = ({ history }) => (
           className="nav-link"
           to="/admin/dashboard"
         >
-          A. Dashboard
+          Admin Dashboard
         </Link>
       </li>
       )}

@@ -52,7 +52,7 @@ const Signin = () => {
         return <Redirect to="/admin/dashboard"/>;
       } 
       else{
-        return <Redirect to="/user/dashboard"/>;
+        return <Redirect to="/cart"/>;
       }
     }
     if (isAutheticated()) {
@@ -93,7 +93,7 @@ const Signin = () => {
       <div className="row">
         <div className="col-md-6 offset-sm-3 text-left">
           <form>
-            <div className="form-group">
+            <div className="form-group m-2">
               <label className="text-light">Email</label>
               <input
                 onChange={handleChange("email")}
@@ -103,7 +103,7 @@ const Signin = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group m-2">
               <label className="text-light">Password</label>
               <input
                 onChange={handleChange("password")}
@@ -112,9 +112,19 @@ const Signin = () => {
                 type="password"
               />
             </div>
-            <button onClick={onSubmit} className="btn btn-success btn-block">
+            <div className="form-group m-2 text-center">
+            <button onClick={onSubmit} className="btn btn-success rounded">
               Submit
             </button>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br> 
+            <br></br>
+            <br></br>
+            <br></br>
+            </div>
           </form>
         </div>
       </div>
@@ -122,12 +132,12 @@ const Signin = () => {
   };
 
   return (
-    <Base title="Sign In page" description="A page for user to sign in!">
+    <Base title="Sign In page" description="Connect. Engage. Access Your Club World!">
       {loadingMessage()}
       {errorMessage()}
       {signInForm()}
       {performRedirect()}
-      <p className="text-white text-center">{JSON.stringify(values)}</p>
+      {/* <p className="text-white text-center">{JSON.stringify(values)}</p> */}
     </Base>
   );
 };

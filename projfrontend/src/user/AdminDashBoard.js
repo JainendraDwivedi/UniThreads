@@ -40,11 +40,11 @@ const AdminDashBoard = () => {
             </Link>
           </li>
 
-          <li className="list-group-item">
+          {/* <li className="list-group-item">
             <Link to="/admin/orders" className="nav-link text-success">
               Manage Orders
             </Link>
-          </li>
+          </li> */}
 
         </ul>
       </div>
@@ -74,14 +74,18 @@ const AdminDashBoard = () => {
   
   return (
     <Base
-      title="Welcome to admin area"
-      description="Manage all of your products here"
+      title="Admin Area"
+      description="Effortless Control. Empowered Management."
       className="container bg-success p-4"
     >
       <div className="row">
         <div className="col-3">{adminLeftSide()}</div>
         <div className="col-9">{adminRightSide()}</div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </Base>
   );
 };

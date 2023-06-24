@@ -74,7 +74,7 @@ const AddCategory = () => {
           value={name}
           autoFocus
           required
-          placeholder="For Ex. Chess Club"
+          placeholder="For Ex. TShirts, Hoodies"
         />
         <button onClick={onSubmit} className="btn btn-outline-info">
           Create Category
@@ -85,8 +85,8 @@ const AddCategory = () => {
 
   return (
     <Base
-      title="Create a category here"
-      description="Add a new category for new tshirts"
+      title="Category Creation"
+      description="Shape Your Club's Identity. Define Your Categories."
       className="container bg-info p-4"
     >
       <div className="row bg-white rounded">

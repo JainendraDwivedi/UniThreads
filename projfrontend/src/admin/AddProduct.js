@@ -172,8 +172,8 @@ const AddProduct = () => {
 
   return (
     <Base
-      title="Add a product here!"
-      description="Welcome to product creation section"
+      title="Product Creation Page"
+      description="Bring Your Merchandise to Life. Create and Showcase Your Products."
       className="container bg-info p-4"
     >
       <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">

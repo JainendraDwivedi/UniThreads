@@ -35,7 +35,7 @@ const ManageCategories = () => {
   };
 
   return (
-    <Base title="Welcome admin" description="Manage categories here">
+    <Base title="Welcome Admin" description="Simplify, Organize, and Rule Your Club Categories.">
       <h2 className="mb-4">All Categories:</h2>
       <Link className="btn btn-info" to={`/admin/dashboard`}>
         <span className="">Admin Home</span>
@@ -69,6 +69,11 @@ const ManageCategories = () => {
           })}
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </Base>
   );
 };

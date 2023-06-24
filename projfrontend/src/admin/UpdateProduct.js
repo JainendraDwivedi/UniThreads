@@ -195,8 +195,8 @@ const UpdateProduct = ({ match }) => {
 
   return (
     <Base
-      title="Update a product here!"
-      description="Welcome to product updation section"
+      title="Update Product Page"
+      description="Craft, Customize, and Captivate. Unleash Your Club's Unique Products"
       className="container bg-info p-4"
     >
       <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">

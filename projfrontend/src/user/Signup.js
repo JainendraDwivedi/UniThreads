@@ -50,7 +50,7 @@ const Signup = () => {
       <div className="row">
         <div className="col-md-6 offset-sm-3 text-left">
           <form>
-            <div className="form-group">
+            <div className="form-group m-2">
               <label className="text-light">Name</label>
               <input
                 className="form-control"
@@ -59,7 +59,7 @@ const Signup = () => {
                 value={name}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group m-2">
               <label className="text-light">Email</label>
               <input
                 className="form-control"
@@ -69,7 +69,7 @@ const Signup = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group m-2">
               <label className="text-light">Password</label>
               <input
                 onChange={handleChange("password")}
@@ -78,9 +78,18 @@ const Signup = () => {
                 value={password}
               />
             </div>
-            <button onClick={onSubmit} className="btn btn-success btn-block">
+            <div className="form-group m-2 text-center">
+            <button onClick={onSubmit} className="btn btn-success rounded">
               Submit
             </button>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br> 
+            
+            </div>
+            
           </form>
         </div>
       </div>
@@ -122,11 +131,11 @@ const Signup = () => {
 
   // return the component
   return (
-    <Base title="Sign up page" description="A page for user to sign up!">
+    <Base title="Sign Up Page" description="Unlock Your Campus Experience with Us!">
       {errorMessage()}
       {successMessage()}  
       {signUpForm()}
-      <p className="text-light text-center">{JSON.stringify(values)}</p>
+      {/* <p className="text-light text-center">{JSON.stringify(values)}</p> */}
     </Base>
   );
 };

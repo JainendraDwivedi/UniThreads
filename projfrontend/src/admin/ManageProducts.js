@@ -70,9 +70,16 @@ const ManageProducts = () => {
                     Delete
                   </button>
                 </div>
+                
               </div>
+              
             );
           })}
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       </div>
     </Base>
