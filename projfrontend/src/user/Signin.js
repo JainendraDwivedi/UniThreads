@@ -137,7 +137,7 @@ const Signin = () => {
       {errorMessage()}
       {signInForm()}
       {performRedirect()}
-      {/* <p className="text-white text-center">{JSON.stringify(values)}</p> */}
+      <p className="text-white text-center">Want to sell your Club's Merch? Contact Developer for Admin Credentials.</p>
     </Base>
   );
 };
