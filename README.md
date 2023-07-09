@@ -16,19 +16,6 @@
 <br/><br/><br/>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#built-with">Built With</a></li>
-    <li><a href="#contributors">Contributors</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#links">Links</a></li>
-  </ol>
-</details>
-  
-
 # About The Project
 
 A comprehensive merchandise management platform for college clubs, streamlining the process of selling and purchasing merchandise for various clubs such as Chess club, Computer Coding Club, Enactus, etc. 
@@ -75,9 +62,12 @@ Projfrontend .env ->
 ## Contributors
 
 - [Jainendra Dwivedi](https://github.com/JainendraDwivedi)
+- [Priya Kumari](https://github.com/priya03050)
 
 ## Links
-* [![LinkedIn][jlinkedin-shield]][jailinked-url] 
+* Website - https://unithreads.netlify.app/
+* [![LinkedIn][jlinkedin-shield]][jailinked-url]
+* [![LinkedIn][plinkedin-shield]][priyalinked-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,3 +84,5 @@ Projfrontend .env ->
 [linkedin-url]: https://www.linkedin.com/in/jainendradwivedi
 [jailinked-url]: https://www.linkedin.com/in/jainendradwivedi
 [jlinkedin-shield]:https://img.shields.io/badge/-Jainendra-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[priyalinked-url]: https://www.linkedin.com/in/priya03050
+[plinkedin-shield]:https://img.shields.io/badge/-Priya-black.svg?style=for-the-badge&logo=linkedin&colorB=555
